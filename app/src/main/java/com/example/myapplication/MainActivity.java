@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
         Double media = (soma / 3);
         textViewMedia.setText(media.toString());
 
-
-
         if (nota1 > nota2 && nota1 > nota3) {
             textViewMaior.setText(nota1.toString());
         }
@@ -67,10 +66,13 @@ public class MainActivity extends AppCompatActivity {
 
         if (media >= 7) {
             textViewResultado.setText("Aprovado");
+            textViewResultado.setTextColor(getResources().getColor(R.color.aprovado));
         } else if (media < 7 && media >= 5) {
             textViewResultado.setText("Recuperação");
+            textViewResultado.setTextColor(getResources().getColor(R.color.recuperacao));
         } else if (media < 5) {
             textViewResultado.setText("Reprovado");
+            textViewResultado.setTextColor(getResources().getColor(R.color.reprovado));
         }
 
     }
