@@ -3,4 +3,9 @@
     <string name="nota1">Nota 1</string>
     <string name="nota2">Nota 2</string>
     <string name="nota3">Nota 3</string>
+    <string name="media">Média</string>
+    <string name="maior">Maior nota</string>
+    <string name="menor">Menor nota</string>
+    <string name="resultado">Resultado</string>
+    <string name="btn">OK</string>
 </resources>
