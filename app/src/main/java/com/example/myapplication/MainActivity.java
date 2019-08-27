@@ -37,8 +37,7 @@ public class MainActivity extends AppCompatActivity {
         Double nota1 = Double.parseDouble(editTextNota1.getText().toString().replace(".", ","));
         Double nota2 = Double.parseDouble(editTextNota2.getText().toString().replace(".", ","));
         Double nota3 = Double.parseDouble(editTextNota3.getText().toString().replace(".", ","));
-        Double soma = (nota1 + nota2 + nota3);
-        Double media = (soma / 3);
+        Double media = ((nota1 + nota2 + nota3 ) / 3);
         textViewMedia.setText(media.toString());
 
         if (nota1 > nota2 && nota1 > nota3) {
